@@ -8,6 +8,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <html data-theme="light"></html>
     <title>Document</title>
     <style>
         * {
@@ -20,8 +21,8 @@
     </style>
 </head>
 
-<body>
-    <header class="bg-[#FFF6DA] p-4 max-w-[1440px] mx-auto">
+<body class="bg-[#FFF6DA]">
+    <header class=" p-4 max-w-[1440px] mx-auto">
 
         <nav class="flex justify-between items-center border-b pb-1">
             <img class="w-29" src="desktop/paint-logo.png" alt="">
@@ -135,9 +136,10 @@
 
 
 
-    <main class="max-w-[1440px ]">
-        <section class="p-4 bg-[#262626] m-4 rounded-[3rem]">
-            <div class="">
+    <main class="max-w-[1440px] mx-auto ">
+        <section class="p-4 bg-[#262626] m-4 md:mx-16 rounded-[3rem]">
+            <div class="md:flex md:flex-row-reverse  ">
+               <div class="md:flex md:flex-col md:justify-center md:items-center md:w-[50%]">
                 <p class="text-[#F9B800] text-xl text-center">Quisque porttitor vitae vel amet neque scelerisque mattis. Consectetur nibh velit magna consectetur leo. </p>
                 <h1 class="text-[#FFFFFF] text-center text-4xl font-bol">
                     Cursus Integer Conseq Aliquam Tristique. 
@@ -145,11 +147,10 @@
                 <div class="mx-auto md:mx-0 w-64 mt-4 flex justify-center items-center gap-1 px-4 py-4 bg-[#ffff] rounded-full text-[#262626]">
                     <h1 class="font-bold">Lorem Ipsum</h1>
                     <img class="bg-[white]" src="desktop/right-arrow.png " alt="">
-
-
                 </div>
+               </div>
 
-                <div class="mt-8 p-5">
+                <div class="mt-8 p-5 md:grid  md:grid-cols-2 md:gap-3 md:w-[50%]">
                     <div class="p-10 bg-[#ffff] rounded-[3rem] mt-2">
                         <img src="desktop/icon-join.png" alt="">
                         <div class="space-y-2">
@@ -171,10 +172,10 @@
                     </div>
 
 
-                    <div class="p-10 bg-[#ffff] rounded-[3rem] mt-2">
+                    <div class="p-10 md:bg-[#F9B800] bg-[#ffff] rounded-[3rem] mt-2">
                         <img src="desktop/icon-hands.png" alt="">
                         <div class="space-y-2">
-                            <h1 class="text-[4rem] font-bold">3<span class="text-[#F9B800]">.</span></h1>
+                            <h1 class="text-[4rem] font-bold">3<span class="md:text-[#ffff] text-[#F9B800]">.</span></h1>
                             <h1 class="text-xl font-bold">Phasellus Vitae</h1>
                             <h2 class="font-bold">Quisque</h2>
                             <p>Porttitor vitae vel amet </p>
@@ -183,10 +184,10 @@
 
 
 
-                    <div class="p-10 bg-[#F9B800] rounded-[3rem] mt-2">
+                    <div class="p-10 bg-[#F9B800] md:bg-[#ffff] rounded-[3rem] mt-2">
                         <img src="desktop/icon-man-yoga.png" alt="">
                         <div class="space-y-2">
-                            <h1 class="text-[4rem] font-bold">4<span class="text-[#ffff]">.</span></h1>
+                            <h1 class="text-[4rem] font-bold">4<span class="md:text-[#F9B800] text-[#ffff]">.</span></h1>
                             <h1 class="text-xl font-bold">Phasellus Vitae</h1>
                             <h2 class="font-bold">Quisque</h2>
                             <p>Porttitor vitae vel amet </p>
@@ -199,6 +200,32 @@
                 </div>
             </div>
                              
+        </section>
+
+
+
+        <section class="mt-16">
+
+
+
+            <div class="bg-base-100 shadow-xl p-14 m-4 rounded-[3rem] md:flex md:mx-14 justify-center md:items-center md:gap-14 ">
+                <figure class="">
+                  <img class="w-64 mx-auto"
+                    src="desktop/male-photo.png"
+                    alt="Movie" />
+                </figure>
+                <div class="text-center  mx-auto md:mx-0  md:text-start mt-14 w-[80%] md:w-[50%]">
+                  <h2 class="font-bold text-3xl">What our customers thought?</h2>
+                  <p class="mt-8 text-[#262626]">Euismod magna id purus eget nunc ligula suspendisse dui netus. Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. </p>
+                  <h2 class="font-bold mt-8">Holly Davidson</h2>
+                  <div class="flex gap-4 justify-center md:justify-start mt-8">
+                      <img src="desktop/trending-flat-left-black.png" alt="">
+                    <img src="desktop/trending-flat-right.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+
         </section>
 
 
